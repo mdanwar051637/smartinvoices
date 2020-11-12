@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voucher</title><!-- Bootstrap 3.3.6 -->
+    <title>Payment</title><!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="https://smartaccountant.tech/assets/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -79,10 +79,21 @@
                 margin: 0;
             }
             .footer_content .billing_address ul li{
-                margin-bottom: 5px;
+                margin-bottom: 25px;
+                border-bottom: 1.5px dashed #ddd;
+                padding-bottom: 5px;
+            }
+            .footer_content .billing_address ul li span:before{
+                display: none;
+            }
+            .footer_content .billing_address ul li:first-child{
+                margin-bottom: 30px;
             }
             .footer_content .billing_address ul li:last-child{
                 margin-bottom: 0;
+            }
+            .footer_content .billing_address ul li b{
+                min-width: auto;
             }
             .signature{
                 margin-top: 0px;
@@ -203,9 +214,9 @@
             <div class="footer_content">
                 <div class="billing_address">
                     <ul class="list-unstyled">
-                        <li><b>Amount In Word </b> <span>Five Hundrad Only</span></li>
-                        <li><b>Note </b> <span>Department Name</span></li>
-                        <li><b>Tag </b> <span>Batch Name</span></li>
+                        <li><b>Amount In Word : </b> <span>Five Hundrad Only</span></li>
+                        <li><b>Note : </b> <span>Department Name</span></li>
+                        <li><b>Tag : </b> <span>Batch Name</span></li>
                     </ul>
                 </div>
             </div>
