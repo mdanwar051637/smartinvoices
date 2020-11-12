@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voucher</title><!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="https://smartaccountant.tech/assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="voucher">
+        <style>
+            .logo_area{
+                display: table;
+                width: 100%;
+            }
+            .logo_area>div{
+                display: table-cell;
+                vertical-align: middle;
+                float: none;
+            }
+            .panel{
+                margin-bottom: 10px;
+                }
+            .invoice-title img{
+                width: 130px;
+            }
+            .page_title{
+                position: relative;
+                padding: 4px 60px;
+                margin: auto;
+                color: #545454;
+                font-size: 22px;
+                font-weight: bold;
+                border-radius: 8px;
+                display: inline-block;
+                border: 2px solid #e0e0e0;
+            }
+            .company_info h2{
+                color: #00a65a;
+            }
+            .company_info ul li{
+                font-size: 16px;
+            }
+            .billing_address{
+                font-size: 18px;
+                margin-bottom: 25px;
+            }
+            .billing_address ul li{
+                margin-bottom: 10px;
+            }
+            .billing_address ul li b{
+                min-width: 150px;
+                display: inline-block;
+            }
+            .billing_address ul li span{
+                position: relative;
+            }
+            .billing_address ul li span:before{
+                content: ':';
+                font-size: 18px;
+                font-weight: bold;
+                padding-right: 10px;
+            }
+            .panel{
+                border-left: none;
+                border-right: none;
+            }
+            .panel-body {
+                padding: 0;
+            }
+            table{
+                font-size: 16px;
+                margin-bottom: 0 !important;
+            }
+            .footer_content .billing_address{
+                font-size: 15px;
+            }
+            .footer_content .billing_address ul{
+                margin: 0;
+            }
+            .footer_content .billing_address ul li{
+                margin-bottom: 5px;
+            }
+            .footer_content .billing_address ul li:last-child{
+                margin-bottom: 0;
+            }
+            .signature{
+                margin-top: 0px;
+            }
+            .signature h4{
+                border-top: 1px solid #c3c3c3;
+                width: 100%;
+                padding-top: 7px;
+                margin-top: 7px;
+            }
+            .signature img{
+                width: 80px;
+            }
+        </style>
+        <div class="container">
+            <div class="heading">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="logo_area">
+                                <div class="col-xs-3">
+                                    <div class="invoice-title">
+                                        <h2><img src="https://lh3.googleusercontent.com/proxy/T2991EsIk0aV_h3nbZ_xvcMUjNiHncgtV-UN9xp1050V9YH-ILSRjeSm2bq-LwRaNDvM6f-75bkcsEpksHOo59PDNysWxKfv0EvL1daU-r5iwZMh9dRtMmLZ6h2OspKP" alt=""></h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 text-center">
+                                    <div class="company_info">
+                                        <h2><b>Smart Accountant</b></h2>
+                                        <ul class="list-unstyled">
+                                            <li><b>Company Address</b></li>
+                                            <li><b>Company Another Address</b></li>
+                                            <li><b>Branch Address:</b></li>
+                                        </ul>
+                                        <div class="page_title">
+                                            Receipt Voucher
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    
+                                </div>
+                            </div>
+                            </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="billing_address">
+                                    <ul class="list-unstyled">
+                                        <li><b>Receipt Number </b> <span>05174678633463</span></li>
+                                        <li><b>Department </b> <span>Department Name</span></li>
+                                        <li><b>Batch Name </b> <span>Batch Name</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="billing_address">
+                                    <ul class="list-unstyled">
+                                        <li><b>Receipt Date </b> <span>Nov 12, 2020</span></li>
+                                        <li><b>Billers Name </b> <span>Md. Anwar Hossain</span></li>
+                                        <li><b>Print Date </b> <span>Nov 13, 2020</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <!-- <div class="panel-heading">
+                                <h3 class="panel-title"><strong>Order summary</strong></h3>
+                            </div> -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <td><strong>DR/CR</strong></td>
+                                                <td class="text-center"><strong>Accounts Head</strong></td>
+                                                <td class="text-center"><strong>Debit Account</strong></td>
+                                                <td class="text-right"><strong>Credit Account</strong></td>
+                                                <td class="text-right"><strong>Narration</strong></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- foreach ($order->lineItems as $line) or some such thing here -->
+                                            <tr>
+                                                <td>Dr.</td>
+                                                <td class="text-center">Cash/Bank</td>
+                                                <td class="text-center">500</td>
+                                                <td class="text-right"></td>
+                                                <td class="text-right"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cr.</td>
+                                                <td class="text-center">Kamal & Sons</td>
+                                                <td class="text-center"></td>
+                                                <td class="text-right">500</td>
+                                                <td class="text-right"></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="text-center"><b>Total</b></td>
+                                                <td class="text-center"><b>500</b></td>
+                                                <td class="text-right"><b>500</b></td>
+                                                <td class="text-right"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_content">
+                <div class="billing_address">
+                    <ul class="list-unstyled">
+                        <li><b>Amount In Word </b> <span>Five Hundrad Only</span></li>
+                        <li><b>Note </b> <span>Department Name</span></li>
+                        <li><b>Tag </b> <span>Batch Name</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom_footer">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="signature text-center">
+                            <img src="https://chefanwarmiah.co.uk/images/signature2_2x.png?crc=476177190" alt="img">
+                            <h4>Deposited By</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="signature text-center">
+                            <img src="https://chefanwarmiah.co.uk/images/signature2_2x.png?crc=476177190" alt="img">
+                            <h4>Accounts Manager</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="signature text-center">
+                            <img src="https://chefanwarmiah.co.uk/images/signature2_2x.png?crc=476177190" alt="img">
+                            <h4>Prepared By</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <div class="signature text-center">
+                            <img src="https://chefanwarmiah.co.uk/images/signature2_2x.png?crc=476177190" alt="img">
+                            <h4>Authorized Signature</h4>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-right" style="margin-top: 20px">Powered by : Smart Software Solutions</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
